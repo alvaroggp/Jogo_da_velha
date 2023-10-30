@@ -2,13 +2,15 @@ from utilitarios import formatacao
 continuar = True
 contador = 0
 
-
+# Cabeçalho do jogo
 print("|-----Jogo-da-velha-----|\n")
 
 while continuar:
     
+    # Criando as posiçoes da matriz
     matriz = ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
     
+    # Designando os simbolos personalizados
     while True:
             
             simbolo_1 = str(input("Qual simbolo o Jogador 1 quer usar: "))
@@ -34,10 +36,13 @@ while continuar:
             else:
                 break
     
+    # Loop central do jogo
     while True:
 
+        # Chamando a formatação da matriz
         formatacao(matriz)
         
+        # Codigo referente ao Jogador 1
         jogador_1 = int(input("Qual posição o Jogador 1 deseja jogar: "))
         
         if matriz[jogador_1] == simbolo_2 or matriz[jogador_1] == simbolo_1 or 0 >jogador_1 > 8:
@@ -73,6 +78,7 @@ while continuar:
 
             break
 
+        # Codigo referente ao Jogador 2
         jogador_2 = int(input("Qual posição o Jogador 2 deseja jogar: "))
 
         if matriz[jogador_2] == simbolo_2 or matriz[jogador_2] == simbolo_1 or 0 > jogador_2 > 8:
@@ -102,7 +108,7 @@ while continuar:
             break
 
         contador += 1
-    
+    # Perguntando se o loop deve continuar
     pergunta = input("Quer jogar novamente (sim[1]/não[2]): ")
     
     while True:
