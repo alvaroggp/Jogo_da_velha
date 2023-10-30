@@ -96,8 +96,7 @@ while continuar:
                     matriz[jogador_2] = simbolo_2
 
                     break
-        
-
+    
         matriz[jogador_2] = simbolo_2
 
         if any(all(matriz[i] == simbolo_2 for i in sublista) for sublista in [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], 
