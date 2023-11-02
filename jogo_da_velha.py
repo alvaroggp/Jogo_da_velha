@@ -107,6 +107,7 @@ while continuar:
             break
 
         contador += 1
+    
     # Perguntando se o loop deve continuar
     pergunta = input("Quer jogar novamente (sim[1]/não[2]): ")
     
@@ -124,14 +125,14 @@ while continuar:
 
             break
 
-        elif pergunta != "1" or pergunta != "2":
+            else: 
 
-            while True:
+                while True:
 
-                pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
+                    pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
 
-                if pergunta in ["1", "2"]:
+                    if pergunta in ["1", "2"]:
 
-                    break
+                        break
            
 print("|-----Muito obrigado por ter jogado!!!-----|")
