@@ -125,7 +125,7 @@ while continuar:
 
             break
 
-        elif pergunta != "1" or pergunta != "2":
+        else:
 
             while True:
 
