@@ -96,8 +96,7 @@ while continuar:
                     matriz[jogador_2] = simbolo_2
 
                     break
-        
-
+    
         matriz[jogador_2] = simbolo_2
 
         if any(all(matriz[i] == simbolo_2 for i in sublista) for sublista in [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], 
@@ -108,6 +107,7 @@ while continuar:
             break
 
         contador += 1
+    
     # Perguntando se o loop deve continuar
     pergunta = input("Quer jogar novamente (sim[1]/não[2]): ")
     
@@ -125,14 +125,14 @@ while continuar:
 
             break
 
-        else:
+        else: 
 
-            while True:
+                while True:
 
-                pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
+                    pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
 
-                if pergunta in ["1", "2"]:
+                    if pergunta in ["1", "2"]:
 
-                    break
+                        break
            
 print("|-----Muito obrigado por ter jogado!!!-----|")
