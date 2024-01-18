@@ -1,5 +1,5 @@
 # Jogo da velha
 
-**Creio que o codigo esteja bem escrito e os comandos estejam bem intuitivos, então creio que não a necessidade de um manual de uso**
+**Recentemente forám feitas modificões no codigo, devido a isto caso queira ver o interior/funcionamento do codigo por favor leia tanto o arquivo jogo_da_velha.py quanto o arquivo utilitarios.py**
 
 Desde já agradeço por sua atenção
