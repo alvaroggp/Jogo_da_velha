@@ -2,7 +2,6 @@ from utilitarios import cabecalho ,formatacao ,escolha_simbolo, loop_principal
 
 continuar = True
 
-
 # Cabeçalho do jogo
 cabecalho()
 
