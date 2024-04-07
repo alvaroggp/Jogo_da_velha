@@ -1,6 +1,6 @@
-from utilitarios import verificando_vitoria, verificando_velha, loop_principal
-from construcaoo import cabecalho, formatacao, escolha_simbolo
-from jogador import jogador
+from utilitarios.py import verificando_vitoria, verificando_velha, loop_principal
+from construcao.py import cabecalho, formatacao, escolha_simbolo
+from Jogador.py import jogadores
 
 
 continuar = True
