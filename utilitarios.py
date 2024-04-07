@@ -1,3 +1,6 @@
+from construcao import formatacao
+
+
 def verificando_vitoria(j, matriz, simbolo_x):
     if any(all(matriz[i] == simbolo_x for i in sublista) for sublista in [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], 
     [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]):
@@ -17,6 +20,21 @@ def verificando_velha(contador):
         print("DEU VELHA!!!")
         return True
 
+
+def jogadores(j, matriz, simbolo_x, simbolo_y):            
+    jogador = int(input(f"Qual posição o Jogador {j} deseja jogar: "))
+    
+    if matriz[jogador] == simbolo_y or matriz[jogador] == simbolo_x or 0 >jogador > 8:
+
+        while True:
+            
+            jogador = int(input("A resposta não é valida, tente novamente: "))
+              
+    else:
+    
+        matriz[jogador] = simbolo_x
+    
+    formatacao(matriz)
 
 
 def loop_principal(matriz, simbolo_1, simbolo_2):
