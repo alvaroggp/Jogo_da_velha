@@ -1,4 +1,7 @@
-from utilitarios import cabecalho ,formatacao ,escolha_simbolo, loop_principal
+from utilitarios import verificando_vitoria, verificando_velha, loop_principal
+from construcaoo import cabecalho, formatacao, escolha_simbolo
+from jogador import jogador
+
 
 continuar = True
 
