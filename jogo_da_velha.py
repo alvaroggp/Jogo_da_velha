@@ -1,6 +1,5 @@
-from utilitarios import verificando_vitoria, verificando_velha, loop_principal, jogadores
-from construcao import cabecalho, formatacao, escolha_simbolo
-
+from utilitarios import loop_principal, repetir
+from construcao import cabecalho, escolha_simbolo, formatacao
 
 continuar = True
 
@@ -21,30 +20,7 @@ while continuar:
     loop_principal(matriz,simbolo_1, simbolo_2)
     
     # Perguntando se o loop deve continuar
-    pergunta = input("Quer jogar novamente (sim[1]/não[2]): ")
+    continuar = repetir()
     
-    while True:
-
-        if pergunta == "1":
-
-            continuar = True
-
-            break
-
-        elif pergunta == "2":
-
-            continuar = False
-
-            break
-
-        else: 
-
-                while True:
-
-                    pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
-
-                    if pergunta in ["1", "2"]:
-
-                        break
-           
+               
 print("|-----Muito obrigado por ter jogado!!!-----|")

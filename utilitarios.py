@@ -1,6 +1,6 @@
 from construcao import formatacao
 
-
+# Verificando se o um dos jogadores venceu 
 def verificando_vitoria(j, matriz, simbolo_x):
     if any(all(matriz[i] == simbolo_x for i in sublista) for sublista in [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], 
     [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]):
@@ -12,15 +12,14 @@ def verificando_vitoria(j, matriz, simbolo_x):
         return False 
         
 
-
+# Verificando se o resultado da partida foi velha
 def verificando_velha(contador):
-    print(contador)
     if contador ==  8:
         
         print("DEU VELHA!!!")
         return True
 
-
+# Codigo referente aos jogadores
 def jogadores(j, matriz, simbolo_x, simbolo_y):            
     jogador = int(input(f"Qual posição o Jogador {j} deseja jogar: "))
     
@@ -37,6 +36,8 @@ def jogadores(j, matriz, simbolo_x, simbolo_y):
     formatacao(matriz)
 
 
+
+# Codigo referente ao loop pricipal
 def loop_principal(matriz, simbolo_1, simbolo_2):
     contador = 0
     while True:
@@ -56,3 +57,35 @@ def loop_principal(matriz, simbolo_1, simbolo_2):
         contador += 1
         if velha: break
         
+
+# Codigo responsavel pela pergunta de continuar com o jogo
+def repetir():
+    pergunta = input("Quer jogar novamente (sim[1]/não[2]): ")
+
+    while True:
+    
+        if pergunta == "1":
+
+            continuar = True
+
+            return continuar
+            
+            break 
+
+        elif pergunta == "2":
+
+            continuar = False
+
+            return continuar
+            
+            break
+
+        else: 
+
+            while True:
+
+                pergunta = input("A reposta é invalida responda novamente (sim[1]/não[2]): ")
+
+                if pergunta in ["1", "2"]:
+
+                    break
